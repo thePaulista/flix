@@ -1,6 +1,6 @@
 module MoviesHelper
   def format_total_gross(movie)
-    if movie.total_gross < 5000000
+    if movie.flop?
       content_tag(:strong, 'Flop!')
       #same as "<strong> Flop!</strong>".html_safe
     else
